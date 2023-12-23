@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="text-white">
+    <div className="">
       <div
         onClick={() => setOpen(!open)}
         className="text-2xl md:hidden bg-rose-700 p-3"
@@ -25,9 +25,9 @@ const Navbar = () => {
         )}
       </div>
       <ul
-        className={`md:flex absolute md:static duration-1000 bg-violet-900 px-6 py-2  m-2 
+        className={`md:flex absolute md:static duration-1000 bg-gray-500 px-6 py-2  m-2 
       ${open ? "top-12" : "-top-72"}
-       shadow-lg  md:m-0 shadow-indigo-700
+       shadow-lg  md:m-0 shadow-yellow-500
       `}
       >
         {routes.map((route) => (
